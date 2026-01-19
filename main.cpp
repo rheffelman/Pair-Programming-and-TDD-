@@ -8,4 +8,5 @@ using namespace std;
 TEST_CASE("Test Template")  
 { 
 	REQUIRE(100 == 100); 
+	printf("Hello World!\n");
 }
