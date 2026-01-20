@@ -7,6 +7,7 @@
 #include "Point.h"
 #include <cmath>
 #include "Line.h"
+#include <limits>
 using namespace std;
 
 //--
@@ -34,8 +35,8 @@ TEST_CASE("Test Template")
 	Line l2(p5, p6);
 	cout << l2.to_string();
 	cout << l2.getLength()<<endl;
-
+	REQUIRE(l2.getSlope() == std::numeric_limits<double>::max());
 	l2.extendLine(1);
-
+	REQUIRE(l2.getLength() == 6.0);
 	cout << l2.to_string();
 }

@@ -18,10 +18,11 @@ double Line::getSlope()
 {
     double deltaX = b.get_x() - a.get_x();
     double deltaY = b.get_y() - a.get_y();
-    
+
     if (deltaX == 0.0) // vertical line
     {
-        printf("deltaX is 0\n");
+        printf("slope is undefined\n");
+        return std::numeric_limits<double>::max();
     }
     return deltaY / deltaX;
 }
