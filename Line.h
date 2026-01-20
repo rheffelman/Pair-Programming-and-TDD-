@@ -3,6 +3,7 @@
 #include <string>
 #include <cmath>
 #include <format>
+#include <limits>
 
 class Line {
 public:
@@ -19,5 +20,5 @@ private:
 
     Point a;
     Point b;
-    
+
 };
