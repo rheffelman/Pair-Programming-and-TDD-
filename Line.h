@@ -19,4 +19,5 @@ private:
 
     Point a;
     Point b;
+    
 };

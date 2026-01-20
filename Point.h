@@ -4,14 +4,16 @@
     
     class Point 
 	{
-        public:
+    public:
+
         Point(double initial_x, double initial_y);
         Point();
         double get_x();
         double get_y();
         string to_string();
 
-        private:
+    private:
+    
 		double x;
 		double y;
 
